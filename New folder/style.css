@@ -1,0 +1,456 @@
+/* ===========================
+        Google Style
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:'Cairo',sans-serif;
+
+    background-image:url("images/logo.png");
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+
+    color:#333;
+
+    position:relative;
+    overflow-x:hidden;
+
+}
+
+/* Overlay */
+
+.overlay{
+
+    position:fixed;
+    inset:0;
+
+    background:rgba(255,255,255,.80);
+
+    z-index:-1;
+
+}
+
+/* ===========================
+        Navbar
+=========================== */
+
+header{
+
+    width:100%;
+    padding:15px 8%;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:fixed;
+    top:0;
+
+    background:rgba(255,255,255,.80);
+    backdrop-filter:blur(10px);
+
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+    z-index:1000;
+
+}
+
+.logo{
+
+    display:flex;
+    align-items:center;
+    gap:12px;
+
+}
+
+.logo img{
+
+    width:60px;
+
+}
+
+.logo h2{
+
+    color:#6B1E2E;
+    font-size:30px;
+
+}
+
+nav ul{
+
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+}
+
+nav ul li a{
+
+    text-decoration:none;
+    color:#333;
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+nav ul li a:hover{
+
+    color:#6B1E2E;
+
+}
+
+/* ===========================
+        Hero
+=========================== */
+
+.hero{
+
+    min-height:100vh;
+
+    display:flex;
+    flex-direction:column;
+
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    padding:120px 20px;
+
+}
+
+.hero-logo{
+
+    width:220px;
+
+    margin-bottom:30px;
+
+}
+
+.hero h1{
+
+    font-size:55px;
+
+    color:#6B1E2E;
+
+    margin-bottom:20px;
+
+}
+
+.hero p{
+
+    max-width:850px;
+
+    line-height:2;
+
+    font-size:22px;
+
+    margin-bottom:35px;
+
+}
+
+.hero button{
+
+    padding:15px 45px;
+
+    border:none;
+
+    border-radius:40px;
+
+    background:#6B1E2E;
+
+    color:white;
+
+    font-size:20px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.hero button:hover{
+
+    background:#A67C52;
+
+    transform:translateY(-5px);
+
+}
+
+/* ===========================
+        Sections
+=========================== */
+
+section{
+
+    padding:90px 10%;
+
+}
+
+section h2{
+
+    text-align:center;
+
+    color:#6B1E2E;
+
+    font-size:40px;
+
+    margin-bottom:40px;
+
+}
+
+/* About */
+
+.about{
+
+    background:white;
+
+    border-radius:20px;
+
+    margin:40px auto;
+
+    width:90%;
+
+    box-shadow:0 15px 40px rgba(0,0,0,.08);
+
+}
+
+.about p{
+
+    line-height:2.2;
+
+    font-size:20px;
+
+    margin-bottom:20px;
+
+    text-align:justify;
+
+}
+
+/* Vision */
+
+.vision{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+
+    gap:30px;
+
+}
+
+.card{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    text-align:center;
+
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+
+    transition:.3s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card i{
+
+    font-size:55px;
+
+    color:#A67C52;
+
+    margin-bottom:20px;
+
+}
+
+.card h2{
+
+    margin-bottom:15px;
+
+}
+
+.card p{
+
+    line-height:2;
+
+}
+
+/* Services */
+
+.services{
+
+    text-align:center;
+
+}
+
+.service-container{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+
+    gap:30px;
+
+}
+
+.service{
+
+    background:white;
+
+    border-radius:20px;
+
+    padding:35px;
+
+    transition:.3s;
+
+    box-shadow:0 15px 30px rgba(0,0,0,.08);
+
+}
+
+.service:hover{
+
+    transform:scale(1.05);
+
+}
+
+.service i{
+
+    font-size:55px;
+
+    color:#6B1E2E;
+
+    margin-bottom:20px;
+
+}
+
+.service h3{
+
+    font-size:22px;
+
+}
+
+/* Footer */
+
+footer{
+
+    background:#6B1E2E;
+
+    color:white;
+
+    text-align:center;
+
+    padding:50px 20px;
+
+}
+
+footer h2{
+
+    color:white;
+
+    margin-bottom:20px;
+
+}
+
+footer p{
+
+    line-height:2;
+
+}
+
+/* ===========================
+      Responsive
+=========================== */
+
+@media(max-width:900px){
+
+header{
+
+flex-direction:column;
+
+gap:20px;
+
+}
+
+nav ul{
+
+flex-wrap:wrap;
+
+justify-content:center;
+
+gap:15px;
+
+}
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.hero p{
+
+font-size:18px;
+
+}
+
+.hero-logo{
+
+width:170px;
+
+}
+
+.about p{
+
+text-align:right;
+
+font-size:18px;
+
+}
+
+}
+.instagram-link{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+
+    margin:25px 0;
+
+    color:white;
+    text-decoration:none;
+
+    font-size:20px;
+    font-weight:bold;
+
+    transition:.3s;
+
+}
+
+.instagram-link:hover{
+
+    color:#E1306C;
+
+}
+
+.instagram-link i{
+
+    font-size:28px;
+
+}
